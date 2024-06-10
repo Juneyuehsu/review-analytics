@@ -20,3 +20,12 @@ sum_len = 0
 for d in data:
 	sum_len += len(d)
 print ('average is', sum_len/len(data))
+
+#list filter (filet out work <100)
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print ('total', len(new), 'less then 100')
+print (new[0])
+print (new[1])
